@@ -13,7 +13,7 @@ public class HelloWorldEndpoint {
   private static final String template = "Hello, %s!";
 
   @GetMapping
-  public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
+  public String hello(@RequestParam(value = "name", defaultValue = "norsys") String name) {
     return String.format(template, name);
   }
 }
